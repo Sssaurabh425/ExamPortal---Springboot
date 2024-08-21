@@ -1,0 +1,43 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <mat-card class="p20">
+                <div class="container mt-20">
+                    <!--in new angular, asset file will not get created in src,
+                    therefore create it manually and add declaration of it in package.json options->assets-->
+                    
+                    <div class="container text-center">
+                        <img clas="text-center" src="../../../assets/logo-compact.png" style="width:200px;"
+                            alt="logo-compact.png" />
+                    </div>
+                </div>
+                <h6 class="text-center">Login Here !!</h6>
+                <!-- {{user | json}} -->
+                <form>
+                    <mat-form-field class="full-width" appearance="fill">
+                        <mat-label>Username</mat-label>
+                        <input 
+                        required
+                        name="username"
+                        matInput placeholder="Enter Username">
+                        <mat-hint>Enter Valid Username</mat-hint>
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="fill">
+                        <mat-label>Username</mat-label>
+                        <input 
+                        required
+                        name="username"
+                        matInput placeholder="Enter Password"/>
+                    </mat-form-field>
+                    <div class="container text-center">
+                        <button type="submit" mat-flat-button>Register</button>
+                        <button style="margin-left:20px" mat-raised-button>Reset</button>
+                    </div>
+                </form>
+            </mat-card>
+            </div>
+
+        </div>
+    </div>
+</div>
